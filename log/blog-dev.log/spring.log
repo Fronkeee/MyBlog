@@ -1,0 +1,720 @@
+2023-05-29T12:27:06.916+08:00  INFO 6496 --- [restartedMain] com.frk.blog.BlogApplication             : Starting BlogApplication using Java 17.0.7 with PID 6496 (E:\idea project\blog\target\classes started by f2425 in E:\idea project\blog)
+2023-05-29T12:27:06.941+08:00 DEBUG 6496 --- [restartedMain] com.frk.blog.BlogApplication             : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-29T12:27:06.942+08:00  INFO 6496 --- [restartedMain] com.frk.blog.BlogApplication             : The following 1 profile is active: "dev"
+2023-05-29T12:27:07.091+08:00  INFO 6496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-29T12:27:07.091+08:00  INFO 6496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-29T12:27:08.998+08:00  INFO 6496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-29T12:27:09.071+08:00  INFO 6496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 5 JPA repository interfaces.
+2023-05-29T12:27:10.439+08:00  INFO 6496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-29T12:27:10.440+08:00  INFO 6496 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.1]
+2023-05-29T12:27:10.441+08:00  INFO 6496 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-05-29T12:27:10.503+08:00  INFO 6496 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-05-29T12:27:10.518+08:00  INFO 6496 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-29T12:27:10.518+08:00  INFO 6496 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-29T12:27:10.586+08:00  INFO 6496 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-29T12:27:10.586+08:00  INFO 6496 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3494 ms
+2023-05-29T12:27:11.063+08:00  INFO 6496 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-29T12:27:11.204+08:00  INFO 6496 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-29T12:27:11.854+08:00  INFO 6496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-29T12:27:13.108+08:00  INFO 6496 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73d4c939
+2023-05-29T12:27:13.114+08:00  INFO 6496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-29T12:27:13.334+08:00  INFO 6496 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-29T12:27:15.161+08:00  INFO 6496 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-29T12:27:15.208+08:00  INFO 6496 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-29T12:27:16.410+08:00  WARN 6496 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-29T12:27:16.683+08:00  INFO 6496 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-05-29T12:27:18.224+08:00  INFO 6496 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-29T12:27:18.362+08:00  INFO 6496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-29T12:27:18.372+08:00  INFO 6496 --- [restartedMain] com.frk.blog.BlogApplication             : Started BlogApplication in 12.426 seconds (process running for 17.207)
+2023-05-29T12:41:21.665+08:00  INFO 6496 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-29T12:41:21.665+08:00  INFO 6496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-29T12:41:21.666+08:00  INFO 6496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-29T12:41:21.724+08:00  INFO 6496 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T12:41:22.033+08:00  INFO 6496 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T12:41:22.359+08:00  WARN 6496 --- [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 127, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T12:41:37.846+08:00  INFO 6496 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T12:41:37.846+08:00  INFO 6496 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T12:59:26.968+08:00  INFO 6496 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T12:59:26.969+08:00  INFO 6496 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:01:23.363+08:00  INFO 6496 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T13:01:23.363+08:00  INFO 6496 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:08:20.491+08:00  INFO 6496 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T13:08:20.491+08:00  INFO 6496 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:08:44.480+08:00  INFO 6496 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T13:08:44.480+08:00  INFO 6496 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:08:45.778+08:00  INFO 6496 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T13:08:45.778+08:00  INFO 6496 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:09:24.948+08:00  INFO 6496 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T13:09:24.948+08:00  INFO 6496 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:15:10.666+08:00  INFO 6496 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T13:15:10.667+08:00  INFO 6496 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:16:00.973+08:00  INFO 6496 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T13:16:00.973+08:00  INFO 6496 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:19:01.392+08:00  INFO 6496 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T13:19:01.392+08:00  INFO 6496 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:20:07.805+08:00  INFO 6496 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T13:20:07.805+08:00  INFO 6496 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:20:49.694+08:00  INFO 6496 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T13:20:49.694+08:00  INFO 6496 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:21:29.166+08:00  INFO 6496 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T13:21:29.166+08:00  INFO 6496 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:22:16.437+08:00  INFO 6496 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T13:22:16.438+08:00  INFO 6496 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:22:17.317+08:00  INFO 6496 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T13:22:17.318+08:00  INFO 6496 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T13:23:33.273+08:00  INFO 6496 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-29T13:23:33.302+08:00  INFO 6496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-29T13:23:33.306+08:00  INFO 6496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-29T16:53:17.347+08:00  INFO 2984 --- [restartedMain] com.frk.blog.BlogApplication             : Starting BlogApplication using Java 17.0.7 with PID 2984 (E:\idea project\blog\target\classes started by f2425 in E:\idea project\blog)
+2023-05-29T16:53:17.367+08:00 DEBUG 2984 --- [restartedMain] com.frk.blog.BlogApplication             : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-29T16:53:17.368+08:00  INFO 2984 --- [restartedMain] com.frk.blog.BlogApplication             : The following 1 profile is active: "dev"
+2023-05-29T16:53:17.424+08:00  INFO 2984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-29T16:53:17.424+08:00  INFO 2984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-29T16:53:18.892+08:00  INFO 2984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-29T16:53:18.991+08:00  INFO 2984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 5 JPA repository interfaces.
+2023-05-29T16:53:19.993+08:00  INFO 2984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-29T16:53:19.993+08:00  INFO 2984 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.1]
+2023-05-29T16:53:19.994+08:00  INFO 2984 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-05-29T16:53:20.055+08:00  INFO 2984 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-05-29T16:53:20.065+08:00  INFO 2984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-29T16:53:20.065+08:00  INFO 2984 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-29T16:53:20.111+08:00  INFO 2984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-29T16:53:20.111+08:00  INFO 2984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2686 ms
+2023-05-29T16:53:20.363+08:00  INFO 2984 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-29T16:53:20.468+08:00  INFO 2984 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-29T16:53:21.384+08:00  INFO 2984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-29T16:53:22.046+08:00  INFO 2984 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ba01b51
+2023-05-29T16:53:22.052+08:00  INFO 2984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-29T16:53:22.137+08:00  INFO 2984 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-29T16:53:23.166+08:00  INFO 2984 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-29T16:53:23.174+08:00  INFO 2984 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-29T16:53:24.066+08:00  WARN 2984 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-29T16:53:24.276+08:00  INFO 2984 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-05-29T16:53:24.686+08:00  INFO 2984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-29T16:53:24.772+08:00  INFO 2984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-29T16:53:24.778+08:00  INFO 2984 --- [restartedMain] com.frk.blog.BlogApplication             : Started BlogApplication in 8.107 seconds (process running for 11.72)
+2023-05-29T16:53:33.887+08:00  INFO 2984 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-29T16:53:33.887+08:00  INFO 2984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-29T16:53:33.888+08:00  INFO 2984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-29T16:53:33.912+08:00  INFO 2984 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T16:53:33.913+08:00  INFO 2984 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T16:53:51.098+08:00  INFO 2984 --- [http-nio-8080-exec-2] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T16:53:51.098+08:00  INFO 2984 --- [http-nio-8080-exec-2] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T16:53:52.120+08:00  INFO 2984 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T16:53:52.121+08:00  INFO 2984 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T16:54:20.710+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T16:54:20.710+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:01:53.289+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:01:53.289+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:10:28.254+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:10:28.254+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:11:16.735+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:11:16.736+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:13:39.707+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:13:39.709+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:34:40.938+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T17:34:41.328+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T17:34:41.380+08:00  WARN 2984 --- [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 127, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T17:34:44.612+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:34:44.612+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:41:55.906+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T17:41:55.923+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T17:41:55.925+08:00  WARN 2984 --- [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 127, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T17:42:10.523+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : Request : {url='/blog/452', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.blog', args=[452, {}]}
+2023-05-29T17:42:10.905+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : --------Result : blog-------
+2023-05-29T17:42:10.927+08:00  WARN 2984 --- [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][blog] Deprecated unwrapped fragment expression "_fragments :: head(~{::title})" found in template blog, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T17:42:10.930+08:00  WARN 2984 --- [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][blog] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template blog, line 18, col 8. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T17:42:10.942+08:00  WARN 2984 --- [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][blog] Deprecated unwrapped fragment expression "_fragments :: script" found in template blog, line 605, col 13. Please use the complete syntax of fragment expressions instead ("~{_fragments :: script}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T17:42:11.422+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : Request : {url='/comments/452', ip='127.0.0.1', classMethod='com.frk.blog.web.CommentController.comments', args=[452, {}]}
+2023-05-29T17:42:11.459+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : --------Result : blog :: commentList-------
+2023-05-29T17:43:50.510+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T17:43:50.527+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T17:43:50.529+08:00  WARN 2984 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 127, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T17:43:51.514+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:43:51.514+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:50:41.995+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:50:41.996+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:50:45.144+08:00  INFO 2984 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:50:45.144+08:00  INFO 2984 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:51:58.801+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:51:58.801+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:52:02.082+08:00  INFO 2984 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:52:02.082+08:00  INFO 2984 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:52:09.776+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:52:09.776+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:52:12.503+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:52:12.504+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:54:34.815+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:54:34.815+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:55:14.258+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:55:14.258+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:58:43.427+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:58:43.427+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T17:59:36.739+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T17:59:36.740+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T18:00:03.871+08:00  INFO 2984 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T18:00:03.871+08:00  INFO 2984 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T18:17:41.958+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T18:17:41.962+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T18:25:05.713+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T18:25:05.768+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T18:26:21.626+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:26:22.173+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:26:22.202+08:00  WARN 2984 --- [http-nio-8080-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-7][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 127, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:26:30.591+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : Request : {url='/blog/452', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.blog', args=[452, {}]}
+2023-05-29T18:26:30.723+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : --------Result : blog-------
+2023-05-29T18:26:30.772+08:00  WARN 2984 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][blog] Deprecated unwrapped fragment expression "_fragments :: head(~{::title})" found in template blog, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:26:30.773+08:00  WARN 2984 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][blog] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template blog, line 18, col 8. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:26:30.782+08:00  WARN 2984 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][blog] Deprecated unwrapped fragment expression "_fragments :: script" found in template blog, line 605, col 13. Please use the complete syntax of fragment expressions instead ("~{_fragments :: script}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:26:31.280+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : Request : {url='/comments/452', ip='127.0.0.1', classMethod='com.frk.blog.web.CommentController.comments', args=[452, {}]}
+2023-05-29T18:26:31.310+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : --------Result : blog :: commentList-------
+2023-05-29T18:27:06.592+08:00  INFO 2984 --- [http-nio-8080-exec-2] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:27:06.612+08:00  INFO 2984 --- [http-nio-8080-exec-2] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:27:06.614+08:00  WARN 2984 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 127, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:28:41.674+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:28:41.687+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:28:41.689+08:00  WARN 2984 --- [http-nio-8080-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-8][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 127, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:28:42.593+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : Request : {url='/types/-1', ip='127.0.0.1', classMethod='com.frk.blog.web.TypesShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2023-05-29T18:28:42.768+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : --------Result : types-------
+2023-05-29T18:28:42.836+08:00  WARN 2984 --- [http-nio-8080-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-8][types] Deprecated unwrapped fragment expression "_fragments :: head(~{::title})" found in template types, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:28:42.837+08:00  WARN 2984 --- [http-nio-8080-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-8][types] Deprecated unwrapped fragment expression "_fragments :: menu(2)" found in template types, line 13, col 8. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(2)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:28:45.443+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:28:45.456+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:28:45.457+08:00  WARN 2984 --- [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 127, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:28:46.929+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : Request : {url='/blog/452', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.blog', args=[452, {}]}
+2023-05-29T18:28:47.040+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : --------Result : blog-------
+2023-05-29T18:28:47.042+08:00  WARN 2984 --- [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][blog] Deprecated unwrapped fragment expression "_fragments :: head(~{::title})" found in template blog, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:28:47.043+08:00  WARN 2984 --- [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][blog] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template blog, line 18, col 8. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:28:47.049+08:00  WARN 2984 --- [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][blog] Deprecated unwrapped fragment expression "_fragments :: script" found in template blog, line 605, col 13. Please use the complete syntax of fragment expressions instead ("~{_fragments :: script}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:28:47.506+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : Request : {url='/comments/452', ip='127.0.0.1', classMethod='com.frk.blog.web.CommentController.comments', args=[452, {}]}
+2023-05-29T18:28:47.529+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : --------Result : blog :: commentList-------
+2023-05-29T18:29:09.341+08:00  WARN 2984 --- [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][admin/index] Deprecated unwrapped fragment expression "admin/_fragments :: head(~{::title})" found in template admin/index, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{admin/_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:29:09.353+08:00  WARN 2984 --- [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][admin/index] Deprecated unwrapped fragment expression "admin/_fragments :: menu(0)" found in template admin/index, line 17, col 8. Please use the complete syntax of fragment expressions instead ("~{admin/_fragments :: menu(0)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:29:12.615+08:00  WARN 2984 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][admin/types] Deprecated unwrapped fragment expression "admin/_fragments :: head(~{::title})" found in template admin/types, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{admin/_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:29:12.615+08:00  WARN 2984 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][admin/types] Deprecated unwrapped fragment expression "admin/_fragments :: menu(2)" found in template admin/types, line 17, col 8. Please use the complete syntax of fragment expressions instead ("~{admin/_fragments :: menu(2)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:29:14.726+08:00  WARN 2984 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][admin/blogs] Deprecated unwrapped fragment expression "admin/_fragments :: head(~{::title})" found in template admin/blogs, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{admin/_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:29:16.662+08:00  WARN 2984 --- [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][admin/tags] Deprecated unwrapped fragment expression "admin/_fragments :: head(~{::title})" found in template admin/tags, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{admin/_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:29:16.663+08:00  WARN 2984 --- [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][admin/tags] Deprecated unwrapped fragment expression "admin/_fragments :: menu(3)" found in template admin/tags, line 17, col 8. Please use the complete syntax of fragment expressions instead ("~{admin/_fragments :: menu(3)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:29:23.871+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : Request : {url='/blog/452', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.blog', args=[452, {}]}
+2023-05-29T18:29:23.982+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : --------Result : blog-------
+2023-05-29T18:29:23.985+08:00  WARN 2984 --- [http-nio-8080-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-7][blog] Deprecated unwrapped fragment expression "_fragments :: head(~{::title})" found in template blog, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:29:23.986+08:00  WARN 2984 --- [http-nio-8080-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-7][blog] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template blog, line 18, col 8. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:29:23.991+08:00  WARN 2984 --- [http-nio-8080-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-7][blog] Deprecated unwrapped fragment expression "_fragments :: script" found in template blog, line 605, col 13. Please use the complete syntax of fragment expressions instead ("~{_fragments :: script}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:29:24.271+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : Request : {url='/comments/452', ip='127.0.0.1', classMethod='com.frk.blog.web.CommentController.comments', args=[452, {}]}
+2023-05-29T18:29:24.291+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : --------Result : blog :: commentList-------
+2023-05-29T18:30:10.355+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:30:10.377+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:30:10.380+08:00  WARN 2984 --- [http-nio-8080-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-7][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 127, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:30:19.218+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:30:19.237+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:30:19.238+08:00  WARN 2984 --- [http-nio-8080-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-7][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 127, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:31:54.974+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:31:54.989+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:31:54.990+08:00  WARN 2984 --- [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 127, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:31:57.789+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : Request : {url='/types/-1', ip='127.0.0.1', classMethod='com.frk.blog.web.TypesShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2023-05-29T18:31:57.801+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : --------Result : types-------
+2023-05-29T18:31:57.804+08:00  WARN 2984 --- [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][types] Deprecated unwrapped fragment expression "_fragments :: head(~{::title})" found in template types, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:31:57.805+08:00  WARN 2984 --- [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][types] Deprecated unwrapped fragment expression "_fragments :: menu(2)" found in template types, line 13, col 8. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(2)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:31:59.233+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:31:59.244+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:31:59.245+08:00  WARN 2984 --- [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 127, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:31:59.934+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : Request : {url='/types/-1', ip='127.0.0.1', classMethod='com.frk.blog.web.TypesShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], -1, {}]}
+2023-05-29T18:31:59.938+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : --------Result : types-------
+2023-05-29T18:31:59.939+08:00  WARN 2984 --- [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][types] Deprecated unwrapped fragment expression "_fragments :: head(~{::title})" found in template types, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:31:59.940+08:00  WARN 2984 --- [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][types] Deprecated unwrapped fragment expression "_fragments :: menu(2)" found in template types, line 13, col 8. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(2)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:35:43.752+08:00  INFO 2984 --- [http-nio-8080-exec-2] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:35:43.760+08:00  INFO 2984 --- [http-nio-8080-exec-2] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:35:43.761+08:00  WARN 2984 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 127, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:35:45.152+08:00  INFO 2984 --- [http-nio-8080-exec-2] com.frk.blog.aspect.LogAspect            : Request : {url='/types/1', ip='127.0.0.1', classMethod='com.frk.blog.web.TypesShowController.types', args=[Page request [number: 0, size 5, sort: updateTime: DESC], 1, {}]}
+2023-05-29T18:35:45.156+08:00  INFO 2984 --- [http-nio-8080-exec-2] com.frk.blog.aspect.LogAspect            : --------Result : types-------
+2023-05-29T18:35:45.243+08:00  WARN 2984 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][types] Deprecated unwrapped fragment expression "_fragments :: head(~{::title})" found in template types, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:35:45.243+08:00  WARN 2984 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][types] Deprecated unwrapped fragment expression "_fragments :: menu(2)" found in template types, line 13, col 8. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(2)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:38:17.273+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:38:17.284+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:38:17.286+08:00  WARN 2984 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 137, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:47:27.424+08:00  INFO 2984 --- [http-nio-8080-exec-2] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:47:27.434+08:00  INFO 2984 --- [http-nio-8080-exec-2] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:47:27.435+08:00  WARN 2984 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 137, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:48:40.281+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:48:40.293+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:48:40.294+08:00  WARN 2984 --- [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 137, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:48:43.949+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T18:48:43.949+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T18:50:43.096+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : Request : {url='/blog/452', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.blog', args=[452, {}]}
+2023-05-29T18:50:43.565+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : --------Result : blog-------
+2023-05-29T18:50:43.568+08:00  WARN 2984 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][blog] Deprecated unwrapped fragment expression "_fragments :: head(~{::title})" found in template blog, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:50:43.568+08:00  WARN 2984 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][blog] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template blog, line 18, col 8. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:50:43.573+08:00  WARN 2984 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][blog] Deprecated unwrapped fragment expression "_fragments :: script" found in template blog, line 605, col 13. Please use the complete syntax of fragment expressions instead ("~{_fragments :: script}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:50:44.012+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : Request : {url='/comments/452', ip='127.0.0.1', classMethod='com.frk.blog.web.CommentController.comments', args=[452, {}]}
+2023-05-29T18:50:44.027+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : --------Result : blog :: commentList-------
+2023-05-29T18:50:46.272+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T18:50:46.273+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T18:50:59.283+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : Request : {url='/about', ip='127.0.0.1', classMethod='com.frk.blog.web.aboutController.about', args=[]}
+2023-05-29T18:50:59.284+08:00  INFO 2984 --- [http-nio-8080-exec-9] com.frk.blog.aspect.LogAspect            : --------Result : about-------
+2023-05-29T18:53:35.547+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : Request : {url='/blog/452', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.blog', args=[452, {}]}
+2023-05-29T18:53:35.587+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : --------Result : blog-------
+2023-05-29T18:53:35.590+08:00  WARN 2984 --- [http-nio-8080-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-8][blog] Deprecated unwrapped fragment expression "_fragments :: head(~{::title})" found in template blog, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:53:35.591+08:00  WARN 2984 --- [http-nio-8080-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-8][blog] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template blog, line 18, col 8. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:53:35.598+08:00  WARN 2984 --- [http-nio-8080-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-8][blog] Deprecated unwrapped fragment expression "_fragments :: script" found in template blog, line 605, col 13. Please use the complete syntax of fragment expressions instead ("~{_fragments :: script}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:53:35.965+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : Request : {url='/comments/452', ip='127.0.0.1', classMethod='com.frk.blog.web.CommentController.comments', args=[452, {}]}
+2023-05-29T18:53:35.988+08:00  INFO 2984 --- [http-nio-8080-exec-10] com.frk.blog.aspect.LogAspect            : --------Result : blog :: commentList-------
+2023-05-29T18:53:36.017+08:00 ERROR 2984 --- [http-nio-8080-exec-10] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-10] Exception processing template "blog::[commentList]": An error happened during template parsing (template: "class path resource [templates/blog.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "blog.getUser().avatar" (template: "blog" - line 490, col 54)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "blog.getUser().avatar" (template: "blog" - line 490, col 54)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method getUser() on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:154) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:105) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:95) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:62) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	... 80 common frames omitted
+
+2023-05-29T18:53:36.060+08:00 ERROR 2984 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method getUser() on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:154) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:105) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:95) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:62) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-29T18:54:03.150+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : Request : {url='/blog/452', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.blog', args=[452, {}]}
+2023-05-29T18:54:03.212+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : --------Result : blog-------
+2023-05-29T18:54:03.217+08:00  WARN 2984 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][blog] Deprecated unwrapped fragment expression "_fragments :: head(~{::title})" found in template blog, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:54:03.219+08:00  WARN 2984 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][blog] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template blog, line 18, col 8. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:54:03.228+08:00  WARN 2984 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][blog] Deprecated unwrapped fragment expression "_fragments :: script" found in template blog, line 605, col 13. Please use the complete syntax of fragment expressions instead ("~{_fragments :: script}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:54:04.193+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : Request : {url='/comments/452', ip='127.0.0.1', classMethod='com.frk.blog.web.CommentController.comments', args=[452, {}]}
+2023-05-29T18:54:04.228+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : --------Result : blog :: commentList-------
+2023-05-29T18:54:04.232+08:00 ERROR 2984 --- [http-nio-8080-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-5] Exception processing template "blog::[commentList]": An error happened during template parsing (template: "class path resource [templates/blog.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "blog.user.avatar" (template: "blog" - line 490, col 54)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "blog.user.avatar" (template: "blog" - line 490, col 54)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'user' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:218) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:105) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:93) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:62) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	... 80 common frames omitted
+
+2023-05-29T18:54:04.234+08:00 ERROR 2984 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'user' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:218) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:105) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:93) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:62) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.0.8.jar:6.0.8]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.8.jar:6.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.8.jar:6.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-29T18:54:27.169+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : Request : {url='/blog/452', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.blog', args=[452, {}]}
+2023-05-29T18:54:27.208+08:00  INFO 2984 --- [http-nio-8080-exec-4] com.frk.blog.aspect.LogAspect            : --------Result : blog-------
+2023-05-29T18:54:27.211+08:00  WARN 2984 --- [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][blog] Deprecated unwrapped fragment expression "_fragments :: head(~{::title})" found in template blog, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:54:27.212+08:00  WARN 2984 --- [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][blog] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template blog, line 18, col 8. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:54:27.218+08:00  WARN 2984 --- [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][blog] Deprecated unwrapped fragment expression "_fragments :: script" found in template blog, line 605, col 13. Please use the complete syntax of fragment expressions instead ("~{_fragments :: script}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:54:27.518+08:00  INFO 2984 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : Request : {url='/comments/452', ip='127.0.0.1', classMethod='com.frk.blog.web.CommentController.comments', args=[452, {}]}
+2023-05-29T18:54:27.534+08:00  INFO 2984 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : --------Result : blog :: commentList-------
+2023-05-29T18:55:12.343+08:00  INFO 2984 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-05-29T18:55:12.474+08:00  INFO 2984 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-29T18:55:12.483+08:00  INFO 2984 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-29T18:55:12.584+08:00  INFO 2984 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-29T18:55:12.639+08:00  INFO 2984 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-29T18:55:12.643+08:00  INFO 2984 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-29T18:55:13.090+08:00  INFO 2984 --- [restartedMain] com.frk.blog.BlogApplication             : Starting BlogApplication using Java 17.0.7 with PID 2984 (E:\idea project\blog\target\classes started by f2425 in E:\idea project\blog)
+2023-05-29T18:55:13.091+08:00 DEBUG 2984 --- [restartedMain] com.frk.blog.BlogApplication             : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-29T18:55:13.092+08:00  INFO 2984 --- [restartedMain] com.frk.blog.BlogApplication             : The following 1 profile is active: "dev"
+2023-05-29T18:55:14.418+08:00  INFO 2984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-29T18:55:14.461+08:00  INFO 2984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 5 JPA repository interfaces.
+2023-05-29T18:55:15.209+08:00  INFO 2984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-29T18:55:15.209+08:00  INFO 2984 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.1]
+2023-05-29T18:55:15.210+08:00  INFO 2984 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-05-29T18:55:15.249+08:00  INFO 2984 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-05-29T18:55:15.250+08:00  INFO 2984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-29T18:55:15.250+08:00  INFO 2984 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-29T18:55:15.268+08:00  INFO 2984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-29T18:55:15.268+08:00  INFO 2984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2172 ms
+2023-05-29T18:55:15.443+08:00  INFO 2984 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-29T18:55:15.450+08:00  INFO 2984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-05-29T18:55:15.461+08:00  INFO 2984 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@739ae922
+2023-05-29T18:55:15.462+08:00  INFO 2984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-05-29T18:55:15.463+08:00  INFO 2984 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-29T18:55:16.157+08:00  INFO 2984 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-29T18:55:16.157+08:00  INFO 2984 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-29T18:55:17.914+08:00  WARN 2984 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-29T18:55:18.166+08:00  INFO 2984 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-05-29T18:55:18.401+08:00  INFO 2984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-29T18:55:18.413+08:00  INFO 2984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-29T18:55:18.416+08:00  INFO 2984 --- [restartedMain] com.frk.blog.BlogApplication             : Started BlogApplication in 5.453 seconds (process running for 7325.359)
+2023-05-29T18:55:18.418+08:00  INFO 2984 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-29T18:55:25.153+08:00  INFO 2984 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-29T18:55:25.153+08:00  INFO 2984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-29T18:55:25.154+08:00  INFO 2984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-29T18:55:25.156+08:00  INFO 2984 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : Request : {url='/blog/452', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.blog', args=[452, {}]}
+2023-05-29T18:55:25.275+08:00  INFO 2984 --- [http-nio-8080-exec-1] com.frk.blog.aspect.LogAspect            : --------Result : blog-------
+2023-05-29T18:55:25.288+08:00  WARN 2984 --- [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][blog] Deprecated unwrapped fragment expression "_fragments :: head(~{::title})" found in template blog, line 3, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: head(~{::title})}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:55:25.290+08:00  WARN 2984 --- [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][blog] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template blog, line 18, col 8. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:55:25.299+08:00  WARN 2984 --- [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][blog] Deprecated unwrapped fragment expression "_fragments :: script" found in template blog, line 605, col 13. Please use the complete syntax of fragment expressions instead ("~{_fragments :: script}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:55:25.918+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : Request : {url='/comments/452', ip='127.0.0.1', classMethod='com.frk.blog.web.CommentController.comments', args=[452, {}]}
+2023-05-29T18:55:25.965+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : --------Result : blog :: commentList-------
+2023-05-29T18:57:13.471+08:00  INFO 2984 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:57:13.484+08:00  INFO 2984 --- [http-nio-8080-exec-6] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:57:13.486+08:00  WARN 2984 --- [http-nio-8080-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-6][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 137, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:57:24.967+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:57:24.994+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:57:24.995+08:00  WARN 2984 --- [http-nio-8080-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-7][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 137, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:59:16.609+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:59:16.624+08:00  INFO 2984 --- [http-nio-8080-exec-5] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:59:16.626+08:00  WARN 2984 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 137, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T18:59:30.679+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T18:59:30.687+08:00  INFO 2984 --- [http-nio-8080-exec-3] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T18:59:30.688+08:00  WARN 2984 --- [http-nio-8080-exec-3] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-3][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 137, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T19:01:01.469+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T19:01:01.487+08:00  INFO 2984 --- [http-nio-8080-exec-7] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T19:01:01.488+08:00  WARN 2984 --- [http-nio-8080-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-7][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 137, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2023-05-29T19:05:45.123+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : Request : {url='/', ip='127.0.0.1', classMethod='com.frk.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2023-05-29T19:05:45.135+08:00  INFO 2984 --- [http-nio-8080-exec-8] com.frk.blog.aspect.LogAspect            : --------Result : index-------
+2023-05-29T19:05:45.136+08:00  WARN 2984 --- [http-nio-8080-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-8][index] Deprecated unwrapped fragment expression "_fragments :: menu(1)" found in template index, line 137, col 7. Please use the complete syntax of fragment expressions instead ("~{_fragments :: menu(1)}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.

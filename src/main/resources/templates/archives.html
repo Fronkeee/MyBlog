@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="_fragments :: head(~{::title})">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>归档</title>
+  <link rel="stylesheet" href="../static/jquery/semantic.min.css" th:href="@{/jquery/semantic.min.css}" >
+  <link  href="../static/css/me.css" th:href="@{/css/me.css}">
+</head>
+<body>
+
+  <!--导航-->
+  <nav th:replace="_fragments :: menu(4)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+    <div class="ui container">
+      <div class="ui inverted secondary stackable menu">
+        <h2 class="ui teal header item">Blog</h2>
+        <a href="#" class=" m-item item m-mobile-hide"><i class=" home icon"></i>首页</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class=" idea icon"></i>分类</a>
+        <a href="#" class=" m-item item m-mobile-hide"><i class=" tags icon"></i>标签</a>
+        <a href="#" class="active m-item item m-mobile-hide"><i class=" clone icon"></i>归档</a>
+        <a href="#" class="m-item item m-mobile-hide"><i class=" info icon"></i>关于我</a>
+      </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+      <i class="sidebar icon"></i>
+    </a>
+  </nav>
+
+  <!--中间内容-->
+  <div  class="m-container-small m-padded-tb-big">
+    <div class="ui container">
+      <!--header-->
+      <div class="ui top attached padded segment ">
+        <div class="ui middle aligned two column grid">
+          <div class="column">
+            <h3 class="ui teal header">归档</h3>
+          </div>
+          <div class="right aligned column">
+            共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="${blogCount}"> 114 </h2> 篇博客
+          </div>
+        </div>
+      </div>
+      <th:block th:each="item : ${archiveMap}">
+          <h3 class="ui center aligned header" th:text="${item.key}">2017</h3>
+          <div class="ui fluid vertical menu">
+            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog : ${item.value}">
+          <span>
+            <i class=" teal circle icon"></i><span th:text="${blog.title}">关于刻意练习的清单</span>
+            <div class="ui teal basic left pointing label m-padded-mini "th:text="${#dates.format(blog.creatTime,'MMMdd')}">9月03</div>
+          </span>
+              <div class="ui orange basic left pointing label m-padded-mini "th:text="${blog.type.name}">原创</div>
+            </a>
+          </div>
+      </th:block>
+
+
+    </div>
+  </div>
+  
+  
+
+  <br>
+  <br>
+  <!--底部footer-->
+
+
+  <!--/*/<th:block th:replace="_fragments :: script">/*/-->
+  <script src="../static/jquery/jquery-3.6.1.js"th:src="@{/jquery/jquery-3.6.1.js}"></script>
+  <script src="../static/jquery/semantic.min.js"th:src="@{/jquery/semantic.min.js}"></script>
+  <!--/*/</th:block>/*/-->
+
+  <script>
+    $('.menu.toggle').click(function () {
+      $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+  </script>
+</body>
+</html>

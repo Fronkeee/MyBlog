@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev
+
+
+Comment:
+  avatar: https://pan.baidu.com/disk/main#/index?category=all
+
